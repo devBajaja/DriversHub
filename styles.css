@@ -28,4 +28,14 @@ body {
 #nav a:hover {
   color: #ffd900;
   transition: 0.5s;
+}
+
+#image-preview {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 45px;
+}
+
+#upload-input {
+  margin-top: 3vh;
 }/*# sourceMappingURL=styles.css.map */
