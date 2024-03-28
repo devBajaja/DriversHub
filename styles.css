@@ -1,1 +1,31 @@
-/*# sourceMappingURL=styles.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row {
+  max-width: 1130px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: rgb(48, 48, 48);
+  color: #fff;
+  font-family: "Exo 2", sans-serif;
+}
+
+#nav {
+  display: flex;
+  justify-content: center;
+  padding-top: 2vh;
+}
+#nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 7vh;
+}
+#nav a:hover {
+  color: #ffd900;
+  transition: 0.5s;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,37 @@
+@import "partials/variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row {
+    max-width: 1130px;
+    margin: 0 auto;
+}
+
+
+body {
+    background-color: $background-color;
+    color: $text-color;
+    font-family: "Exo 2", sans-serif;
+}
+
+#nav {
+    display: flex;
+    justify-content: center;
+    padding-top: 2vh;
+
+    a {
+        color: $text-color;
+        text-decoration: none;
+        margin-right: 7vh;
+
+        &:hover {
+            color: $hover-color;
+            transition: .5s;
+        }
+    }
+
+}
