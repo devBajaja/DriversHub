@@ -36,6 +36,25 @@ body {
   border-radius: 45px;
 }
 
-#upload-input {
+#upload-button {
+  background-color: #fff;
+  color: black;
+}
+
+.button::file-selector-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 3vh;
+}
+
+.save-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
   margin-top: 3vh;
 }/*# sourceMappingURL=styles.css.map */
