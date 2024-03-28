@@ -43,11 +43,6 @@ body {
     border-radius: 45px;
 }
 
-#upload-button {
-    background-color: #fff;
-    color: black;
-}
-
 .button::file-selector-button {
     @include button;
 }
