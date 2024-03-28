@@ -21,11 +21,22 @@
 
 
     <main>
-        <div id="image-container">
-    <img id="image-preview" src="img/truck_image.jpg" alt="Default Image">
-        </div>
-        <input type="file" class="button"  id="upload-input">
-        <button class="save-button">Save</button>
+        <section class="settings">
+            <div class="settings-container">
+                <div id="image-container">
+            <img id="image-preview" src="img/truck_image.jpg" alt="Default Image" class="special-image">        
+            <button class="save-button remove-button" onclick="">Remove photo</button>
+                </div>
+                <input type="file" class="button"  id="upload-input">
+
+                <p class="current-name">Your current nickname:</p>
+                <div id="user-id" class="generated-name"></div>
+
+                <input type="text" value="Change nickname" class="js-name-change">
+                <button class="save-button" onclick="showText()">Save</button>
+                <div id="hiddenText" class="hidden-text">Sucessfully saved!</div>
+            </div>
+    </section>
     </main>
 
 

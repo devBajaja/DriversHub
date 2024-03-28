@@ -1,3 +1,27 @@
+
+// Funkce pro generování náhodných symbolů
+function generateRandomSymbols(length) {
+  const symbols = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  let result = '';
+  for (let i = 0; i < length; i++) {
+      result += symbols.charAt(Math.floor(Math.random() * symbols.length));
+  }
+  return result;
+}
+
+// Generování jména
+function generateUserName() {
+  const prefix = 'User';
+  const twoDigits = Math.floor(Math.random() * 100).toString().padStart(2, '0');
+  const randomSymbols = generateRandomSymbols(4);
+  return `${prefix}${twoDigits}${randomSymbols}`;
+}
+
+// Získání elementu s ID "user-id" a nastavení textu na vygenerované jméno
+const userIdElement = document.getElementById('user-id');
+userIdElement.textContent = generateUserName();
+
+
 var profileImage = function(event) {
     var file = event.target.files[0];
     var reader = new FileReader();
@@ -26,4 +50,16 @@ var profileImage = function(event) {
     var imageUrl = document.getElementById('image-preview').src;
     var jsonData = JSON.stringify({ image: imageUrl });
     console.log(jsonData);
+
   });
+
+  const name = getElementById('js-name');
+
+  function showText() {
+    var text = document.getElementById("hiddenText");
+    text.style.display = "block";
+    setTimeout(function() {
+      text.style.display = "none";
+    }, 2000);
+  }
+  
