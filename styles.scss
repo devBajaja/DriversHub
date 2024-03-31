@@ -86,3 +86,22 @@ body {
     margin-top: 10px;
     color: $hover-color;
 }
+
+.exams-container {
+    text-align: center;
+    justify-content: center;
+}
+
+.exam-background {
+    background-color: #0000003d;
+    border-radius: 25px;
+    padding: 30px;
+    margin-left: 5vh;
+    margin-top: 5vh;
+    max-width: 25%;
+    display: inline-block;
+
+    a {
+        color: $hover-color;
+    }
+}
