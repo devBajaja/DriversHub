@@ -53,13 +53,23 @@ var profileImage = function(event) {
 
   });
 
-  const name = getElementById('js-name');
-
   function showText() {
+    console.log(document.getElementById("saveButtonInput").value);
     var text = document.getElementById("hiddenText");
     text.style.display = "block";
     setTimeout(function() {
       text.style.display = "none";
     }, 2000);
+
+    document.getElementById('user-id').innerText = saveButtonInput.value;
+
   }
   
+  document.getElementById("saveButton").addEventListener("click", function(){
+    console.log(document.getElementById("saveButtonInput").value)
+  })
+
+
+  function resetPhoto(){
+    document.getElementById("image-preview").src = "img/truck_image.jpg";
+  }  
