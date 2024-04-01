@@ -47,9 +47,14 @@ function showText() {
 
   localStorage.setItem('user-id', value)
   document.getElementById('user-id').innerText = value;
+
+  if (localStorage.getItem('uploadedImage')) {
+    document.getElementById('image-preview').src = localStorage.getItem('uploadedImage');
+  }
 }
 
 function resetPhoto() {
+  localStorage.setItem('uploadedImage', 'img/truck_image.jpg');
   document.getElementById("image-preview").src = "img/truck_image.jpg";
 }
 
@@ -61,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Načtení URL obrázku z lokálního úložiště při načtení stránky
   if (localStorage.getItem('uploadedImage')) {
-    document.getElementById('image-preview').src = savedImage;
+    document.getElementById('image-preview').src = localStorage.getItem('uploadedImage');
   }
 })
 
