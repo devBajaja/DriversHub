@@ -10,25 +10,61 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div id="nav">
-            <div><a href="index.html">Home</a></div>
-            <div><a href="">Leaderboard</a></div>
-            <div><a href="exams.html">Exams</a></div>
-            <div><a href="profile.html"><i class="fa-solid fa-user"></i></a></div>
-        </div>
-    </header>
-
-
     <main>
-
-    </main>
-
-
-    <footer>
-
-    </footer>
+        <header>
+            <div id="login-register">
+        <!-- Login form -->
+        <div id="login-form">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password"><br><br>
+                <button type="button" class="button-color-class" onclick="checkLogin()">Login</button>
+                <button type="button" class="button-color-class" onclick="showRegisterForm()">Register</button>
+            </form>
+        </div>
     
+        <!-- Registration form -->
+        <div id="register-form" class="hidden-text">
+            <h2>Registration</h2>
+            <form id="registerForm">
+                <label for="newUsername">New Username:</label><br>
+                <input type="text" id="newUsername" name="newUsername"><br>
+                <label for="newPassword">New Password:</label><br>
+                <input type="password" id="newPassword" name="newPassword"><br><br>
+                <button type="button" class="button-color-class" onclick="checkLogin()">Login</button>
+                <button type="button" class="button-color-class" onclick="register()">Register</button>
+            </form>
+        </div>
+        </div>
+
+        <!-- Content visible after login -->
+        <div id="content">
+            <div id="nav">
+                <div><a href="index.html">Home</a></div>
+                <div><a href="">Leaderboard</a></div>
+                <div><a href="exams.html">Exams</a></div>
+                <div><a href="profile.html"><i class="fa-solid fa-user"></i></a></div>
+                <div id="logout-button"><button type="button" class="logout-button" onclick="logout()">Logout</button>
+                </div>
+            </div>
+        </header>
+    
+    
+        <main>
+    
+        </main>
+    
+    
+        <footer>
+    
+        </footer>
+        </div>
+    
+        <!-- Error or success message -->
+        <div id="message"></div>
 </body>
 <script src="scripts/index.js"></script>
 </html>

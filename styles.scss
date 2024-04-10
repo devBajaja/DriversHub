@@ -19,6 +19,51 @@ body {
     font-family: "Exo 2", sans-serif;
 }
 
+#login-form, #register-form, #content {
+    justify-content: center;
+    align-items: center;
+    color: $hover-color;
+}
+
+
+.incorrect-username {
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+}
+
+#message {
+    text-align: center;
+    margin-top: 1vh;
+    color: $hover-color;
+}
+
+#login-register {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#logout-button button {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 1vh;
+    background-color: $hover-color;
+    color: $text-color;
+    margin-top: -1vh;
+}
+
+.button-color-class {
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 1vh;
+    background-color: $hover-color;
+    color: $text-color;
+    margin-inline: 0.5vh;
+}
+
 #nav {
     display: flex;
     justify-content: center;
