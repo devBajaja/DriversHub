@@ -48,20 +48,22 @@ body {
     text-align: center;
     justify-content: center;
     cursor: pointer;
-    border-radius: 15px;
-    padding: 1vh;
-    background-color: $hover-color;
-    color: $text-color;
     margin-top: -1vh;
+    @include button;
 }
 
 .button-color-class {
     cursor: pointer;
-    border-radius: 15px;
-    padding: 1vh;
-    background-color: $hover-color;
-    color: $text-color;
+    @include button;
     margin-inline: 0.5vh;
+}
+
+.form-h2-margin {
+    margin-bottom: 1vh;
+}
+
+#login-form input, #register-form input, #saveButtonInput {
+    border-radius: 0.5vh;
 }
 
 #nav {
@@ -120,10 +122,12 @@ body {
 
 .button::file-selector-button {
     @include button;
+    margin-top: 3vh;
 }
 
 .save-button {
     @include button;
+    margin-top: 3vh;
 }
 
 .hidden-text {
