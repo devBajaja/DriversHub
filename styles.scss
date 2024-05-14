@@ -16,7 +16,7 @@
 body {
     background-color: $background-color;
     color: $text-color;
-    font-family: "Exo 2", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 #login-form, #register-form, #content {
@@ -50,6 +50,7 @@ body {
     cursor: pointer;
     margin-top: -1vh;
     @include button;
+    font-family: "Inter", sans-serif;
 }
 
 .button-color-class {
@@ -82,6 +83,33 @@ body {
         }
     }
 
+}
+
+#right-side-bar {
+    position: absolute;
+    left: 80%;
+    top: 25%;
+    background-color: rgb(31, 31, 31);
+    padding: 4vh;
+    border-radius: 2vh;
+    
+        h1  {
+            text-align: center;
+            background-color: #fff346;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1vh;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        svg {
+            position: relative;
+            left: 43%;
+            margin-bottom: 1vh;
+        }
 }
 
 .settings {
