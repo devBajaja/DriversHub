@@ -113,7 +113,7 @@ body {
 .truck-left {
   position: absolute;
   left: 2%;
-  top: 23%;
+  top: 25%;
 }
 .truck-left img {
   animation: upDown 5s infinite;
