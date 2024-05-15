@@ -112,6 +112,33 @@ body {
         }
 }
 
+.truck-left {
+    position: absolute;
+    left: 2%;
+    top: 23%;
+
+
+    img {
+        -webkit-animation: upDown 5s infinite;
+        animation: upDown 5s infinite;
+    }
+}
+
+@keyframes upDown {
+    0% {
+      -webkit-transform: translateY(-45px);
+      transform: translateY(-45px);
+    }
+    50% {
+      -webkit-transform: translateY(45px);
+      transform: translateY(45px);
+    }
+    100% {
+      -webkit-transform: translateY(-45px);
+      transform: translateY(-45px);
+    }
+  }
+
 .settings {
     max-width: 25%;
     margin-left: 34.5%;
