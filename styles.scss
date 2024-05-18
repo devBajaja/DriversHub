@@ -92,6 +92,9 @@ body {
     background-color: rgb(31, 31, 31);
     padding: 4vh;
     border-radius: 2vh;
+    visibility: visible; 
+    animation-duration: 2000ms; 
+    animation-name: fadeInUp;
     
         h1  {
             text-align: center;
@@ -141,7 +144,31 @@ body {
 .h1-welcome-message {
     padding-top: 17%;
     text-align: center;
+    visibility: visible; 
+    animation-duration: 2000ms; 
+    animation-name: fadeInUp;
 }
+
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(20px);
+      -ms-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  
+  .fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+  }
 
 .settings {
     max-width: 25%;

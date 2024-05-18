@@ -92,6 +92,9 @@ body {
   background-color: rgb(31, 31, 31);
   padding: 4vh;
   border-radius: 2vh;
+  visibility: visible;
+  animation-duration: 2000ms;
+  animation-name: fadeInUp;
 }
 #right-side-bar h1 {
   text-align: center;
@@ -133,6 +136,23 @@ body {
 .h1-welcome-message {
   padding-top: 17%;
   text-align: center;
+  visibility: visible;
+  animation-duration: 2000ms;
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fadeInUp {
+  animation-name: fadeInUp;
 }
 
 .settings {
