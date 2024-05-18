@@ -246,3 +246,18 @@ body {
         color: $hover-color;
     }
 }
+
+footer p {
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+footer p a:hover {
+        color: $hover-color;
+        transition: .5s;
+    }
